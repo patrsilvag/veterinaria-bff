@@ -6,16 +6,17 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClient;
+import org.springframework.beans.factory.annotation.Value;
 
 @Service
 public class RoleService {
 
     private final RestClient restClient;
 
-    public RoleService(RestClient.Builder builder) {
+        public RoleService(RestClient.Builder builder, @Value("${roles.url}") String rolesUrl) {
 
-        this.restClient = builder.baseUrl("http://localhost:7071").build();
-    }
+            this.restClient = builder.baseUrl(rolesUrl).build();
+        }
 
     /**
      * GET /api/Roles

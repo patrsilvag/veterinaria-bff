@@ -6,16 +6,17 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClient;
-
+import org.springframework.beans.factory.annotation.Value;
 
 @Service
 public class UsuarioService {
 
     private final RestClient restClient;
 
-    public UsuarioService(RestClient.Builder builder) {
+    public UsuarioService(RestClient.Builder builder,
+            @Value("${usuarios.url}") String usuariosUrl) {
 
-        this.restClient = builder.baseUrl("http://localhost:7071").build();
+        this.restClient = builder.baseUrl(usuariosUrl).build();
     }
 
     /**

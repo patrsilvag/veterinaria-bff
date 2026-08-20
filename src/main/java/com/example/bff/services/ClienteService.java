@@ -4,15 +4,17 @@ import com.example.bff.dto.ClienteRequest;
 import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClient;
+import org.springframework.beans.factory.annotation.Value;
 
 @Service
 public class ClienteService {
 
     private final RestClient restClient;
 
-    public ClienteService(RestClient.Builder builder) {
+    public ClienteService(RestClient.Builder builder,
+            @Value("${clientes.url}") String clientesUrl) {
 
-        this.restClient = builder.baseUrl("http://localhost:8082").build();
+        this.restClient = builder.baseUrl(clientesUrl).build();
     }
 
     /**
