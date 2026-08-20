@@ -1,4 +1,10 @@
+com\example\bff\dto\UsuarioRequest.class
+com\example\bff\dto\ClienteRequest.class
+com\example\bff\dto\RoleRequest.class
+com\example\bff\controllers\UsuarioController.class
+com\example\bff\services\ClienteService.class
+com\example\bff\controllers\RoleController.class
 com\example\bff\controllers\ClienteController.class
 com\example\bff\VeterinariaBffApplication.class
-com\example\bff\dto\ClienteRequest.class
-com\example\bff\services\ClienteService.class
+com\example\bff\services\RoleService.class
+com\example\bff\services\UsuarioService.class

@@ -1,0 +1,36 @@
+package com.example.bff.exceptions;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
+import org.springframework.web.client.HttpClientErrorException;
+import org.springframework.web.client.HttpServerErrorException;
+
+@RestControllerAdvice
+public class GlobalExceptionHandler {
+
+    /**
+     * Errores 4xx provenientes de las Functions o microservicios.
+     */
+    @ExceptionHandler(HttpClientErrorException.class)
+    public ResponseEntity<String> handleClientError(
+            HttpClientErrorException ex) {
+
+        return ResponseEntity
+                .status(ex.getStatusCode())
+                .body(ex.getResponseBodyAsString());
+    }
+
+    /**
+     * Errores 5xx provenientes de las Functions o microservicios.
+     */
+    @ExceptionHandler(HttpServerErrorException.class)
+    public ResponseEntity<String> handleServerError(
+            HttpServerErrorException ex) {
+
+        return ResponseEntity
+                .status(ex.getStatusCode())
+                .body(ex.getResponseBodyAsString());
+    }
+}

@@ -1,4 +1,10 @@
 C:\Proyectos\Cloud Native II\Formativa\veterinaria-bff\src\main\java\com\example\bff\controllers\ClienteController.java
+C:\Proyectos\Cloud Native II\Formativa\veterinaria-bff\src\main\java\com\example\bff\controllers\RoleController.java
+C:\Proyectos\Cloud Native II\Formativa\veterinaria-bff\src\main\java\com\example\bff\controllers\UsuarioController.java
 C:\Proyectos\Cloud Native II\Formativa\veterinaria-bff\src\main\java\com\example\bff\dto\ClienteRequest.java
+C:\Proyectos\Cloud Native II\Formativa\veterinaria-bff\src\main\java\com\example\bff\dto\RoleRequest.java
+C:\Proyectos\Cloud Native II\Formativa\veterinaria-bff\src\main\java\com\example\bff\dto\UsuarioRequest.java
 C:\Proyectos\Cloud Native II\Formativa\veterinaria-bff\src\main\java\com\example\bff\services\ClienteService.java
+C:\Proyectos\Cloud Native II\Formativa\veterinaria-bff\src\main\java\com\example\bff\services\RoleService.java
+C:\Proyectos\Cloud Native II\Formativa\veterinaria-bff\src\main\java\com\example\bff\services\UsuarioService.java
 C:\Proyectos\Cloud Native II\Formativa\veterinaria-bff\src\main\java\com\example\bff\VeterinariaBffApplication.java
