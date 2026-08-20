@@ -1,0 +1,4 @@
+com\example\bff\controllers\ClienteController.class
+com\example\bff\VeterinariaBffApplication.class
+com\example\bff\dto\ClienteRequest.class
+com\example\bff\services\ClienteService.class
